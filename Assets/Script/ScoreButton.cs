@@ -11,7 +11,7 @@ public class ScoreButton : MonoBehaviour
     void Awake()
     {
         scoreButton = GetComponent<Button>();
-        scoreButton.onClick.AddListener(PointUp); // 메소드를 연결할 때는 () 안붙임.
+        scoreButton.onClick.AddListener(PointUp);
     }
 
     public void PointUp()
