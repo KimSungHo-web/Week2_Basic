@@ -15,6 +15,6 @@ public class AnimationController : MonoBehaviour
     {
         _animator.SetInteger("State", animationVariable);
         animationVariable = (animationVariable + 1) % 3;
-        Debug.Log("{animationVariable}");
+        Debug.Log(animationVariable);
     }
 }
