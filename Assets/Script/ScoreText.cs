@@ -12,10 +12,10 @@ public class ScoreText : MonoBehaviour
     {
         scoreText = GetComponent<TextMeshProUGUI>();
 
-        scoreButton.scoreButton.onClick.AddListener(RefreshUI);
+        scoreButton.OnScoreChanged += RefreshUI;
     }
-    public void RefreshUI()
+    public void RefreshUI(int newscore)
     {
-        scoreText.text = $"Score : {scoreButton.score}";
+        scoreText.text = $"Score : {newscore}";
     }
 }
